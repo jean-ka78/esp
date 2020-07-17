@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/jean/.arduino15/packages/esp8266/tools/**",
+                "/home/jean/.arduino15/packages/esp8266/hardware/esp8266/2.5.2/**",
+                "C:\\Users\\e.kapitonov\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
+                "C:\\Users\\e.kapitonov\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**"
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/cpp",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
