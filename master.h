@@ -96,6 +96,10 @@ void setup_mega()
       t.u[0]    = regs[22];
       t.u[1]    = regs[23];
       Tmin_i = t.f;
+      flagZ_1 = regs[38];
+      flagZ_2 = regs[39];
+      flagZ_3 = regs[40];
+      flagZ_4 = regs[41];
       // CO_2      = regs[8];
       // nh.u[1]   = regs[9];
       // nh.u[0]   = regs[10];
