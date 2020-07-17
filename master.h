@@ -3,7 +3,7 @@
      // interval at which to blink (milliseconds)
 ////////////////////modbus////////////
 #define baud        115200
-#define timeout     100
+#define timeout     50
 #define polling     200 // скорость опроса по модбус
 #define retry_count 10
 #define TxEnablePin 0   // Tx/Rx пин RS485

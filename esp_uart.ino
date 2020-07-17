@@ -47,7 +47,7 @@ void loop()
   //  loopMQtt(); 
   //  DATA_Resive();
   //  DATA_Send();
-  //  modbus_update(); 
+    modbus_update(); 
 up_reg();
 }
 

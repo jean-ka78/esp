@@ -116,7 +116,7 @@ void setup_blynk(){
   timer.setInterval(10000L, activetoday);
   timer.setInterval(1000L, resetRelay); 
   timer.setInterval(50L, logic);
- timer.setInterval(5, modbus_update);
+// timer.setInterval(5, modbus_update);
   timer.setInterval(50, svet);
   // timer.setInterval(1000L, DATA_Send);
   // timer.setInterval(500L, DATA_Resive);
