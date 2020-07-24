@@ -4,7 +4,7 @@ BLYNK_WRITE(V16){
   EEPROM.write(29, VentTempStart);
   EEPROM.end();
   
-//  DATA_Send();
+  DATA_Send();
 }
 BLYNK_WRITE(V17){
    flag_send = true;
@@ -14,7 +14,7 @@ BLYNK_WRITE(V17){
   EEPROM.write(30, VentTempStop);
   EEPROM.end();
  
-//  DATA_Send();
+  DATA_Send();
 }
 BLYNK_WRITE(V15){
   flag_send = true;
@@ -24,7 +24,7 @@ BLYNK_WRITE(V15){
     EEPROM.write(31,  VentTime);
     EEPROM.end();
     
-//    DATA_Send();
+    DATA_Send();
 }
 
 

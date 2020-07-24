@@ -133,7 +133,7 @@ BLYNK_WRITE(V43){
 BLYNK_WRITE(V55){
   heat = param.asInt();
   flag_send = true;
-//  DATA_Send();
+  DATA_Send();
 }
 
 

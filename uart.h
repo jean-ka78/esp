@@ -13,11 +13,12 @@ struct Resive_DATA{
   float t_in_max;
   float t_out_min;
   float t_out_max;
-  int32_t CO2;
-  int32_t lux;
+//  int32_t CO2;
+//  int32_t lux;
   int32_t Time_on;
   int32_t Temp_on;
   int32_t Temp_off;
+  bool heat_t;
   bool window;
   bool flag_z1;
   bool flag_z2;
@@ -30,7 +31,7 @@ struct Resive_DATA{
 union uart_r
 {
     Resive_DATA uart_rxdata;
-    byte RESIVE_ARRAY[62];
+    byte RESIVE_ARRAY[64];
 }rxdata_u;
 
  
@@ -118,19 +119,25 @@ void DATA_Resive()
         Tmin      = rxdata_u.uart_rxdata.t_out_min;
         Tmax_i    = rxdata_u.uart_rxdata.t_in_max;
         Tmin_i    = rxdata_u.uart_rxdata.t_in_min;
-        CO_2      = rxdata_u.uart_rxdata.CO2;
-        lux       = rxdata_u.uart_rxdata.lux;
+//        CO_2      = rxdata_u.uart_rxdata.CO2;
+//        lux       = rxdata_u.uart_rxdata.lux;
         flag_wind = rxdata_u.uart_rxdata.window;
         flagZ_1   = rxdata_u.uart_rxdata.flag_z1;
         flagZ_2   = rxdata_u.uart_rxdata.flag_z2;
         flagZ_3   = rxdata_u.uart_rxdata.flag_z3;
         flagZ_4   = rxdata_u.uart_rxdata.flag_z4;
-        
+        heat_t = rxdata_u.uart_rxdata.heat_t;
 
-      // terminal.println("Temp_on:"+String(temp_on));
-      // terminal.flush(); 
+//      terminal.println("flag_z1:"+String(flagZ_1));
+//      terminal.flush(); 
      
-  if (temp_on!=VentTempStart)
+ 
+}
+}
+}
+
+void up_array(){
+   if (temp_on!=VentTempStart)
 {
   VentTempStart = temp_on;
   Blynk.virtualWrite(V16, VentTempStart);
@@ -153,10 +160,15 @@ if (time_on!=VentTime)
   // Blynk.syncVirtual(V15);
   EEPROM.write(31, VentTime);
   EEPROM.end();
-}}}
-
+}
+if (heat_t!=heat)
+{
+  heat = heat_t;
+  Blynk.virtualWrite(V55, heat_t);
+  /* code */
 }
 
+}
 
 
 

@@ -75,6 +75,7 @@ bool relayZ_3;
 bool relayZ_4;
 bool manual_z;
 bool heat;
+bool heat_t;
 bool send_heat;
 
 

@@ -21,7 +21,7 @@ void setup()
   Serial.begin(115200);
   setup_mega();
     // Следующие три строки для прошивки по воздуху
-  ArduinoOTA.setHostname("ESPTeplica007"); // Задаем имя сетевого порта
+  ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
   //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
   ArduinoOTA.begin(); // Инициализируем OTA
   
@@ -40,15 +40,15 @@ void loop()
   rssi =  map(WiFi.RSSI(), -105, -35, 0, 100);
    loopBlynk();
   //  temp_up();
-  //  logic();
+    logic();
    S_led(); 
   //  svet();
 //   clockDisplay();
   //  loopMQtt(); 
-  //  DATA_Resive();
-  //  DATA_Send();
-    modbus_update(); 
-up_reg();
+    DATA_Resive();
+//    DATA_Send();
+    // modbus_update(); 
+// up_reg();
 }
 
    

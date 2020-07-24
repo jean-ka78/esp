@@ -1,4 +1,3 @@
-//#define BLYNK_PRINT Serial
 //#include <UIPEthernet.h>
 //#include <BlynkSimpleUIPEthernet.h>
 #include "Connect.h"
@@ -21,7 +20,7 @@ WidgetRTC rtc;
 BLYNK_CONNECTED() {
   if (isFirstConnect) {
     Blynk.syncAll();
-    Blynk.notify("TEST STARTING!!!!");
+    Blynk.notify("Теплица test STARTING!!!!");
     isFirstConnect = false;
   }
    Blynk.syncVirtual(V16,V17,V15,V50,V40,V41,V42,V43,V55,V51,V52,V55);
@@ -52,7 +51,7 @@ int count = 0;
     // absTemp_in += Temp[i];      // складываем все температуры . . .
     //absTemp_in /= (sizeof(Temp)/sizeof(Temp[0]));        // . . . усредняем их с помощью деления
   Temp_s = absTemp_in;
-
+Temp_in = Temp_s;
 }
 
 // void printDigits(int digits)
@@ -116,10 +115,10 @@ void setup_blynk(){
   timer.setInterval(10000L, activetoday);
   timer.setInterval(1000L, resetRelay); 
   timer.setInterval(50L, logic);
-// timer.setInterval(5, modbus_update);
+ timer.setInterval(5000, up_array);
   timer.setInterval(50, svet);
   // timer.setInterval(1000L, DATA_Send);
-  // timer.setInterval(500L, DATA_Resive);
+//  timer.setInterval(500L, DATA_Resive);
    timer.setInterval(1000L, clockDisplay);
 }
 
