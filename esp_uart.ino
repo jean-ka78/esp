@@ -45,7 +45,7 @@ void loop()
   //  svet();
 //   clockDisplay();
   //  loopMQtt(); 
-    DATA_Resive();
+    // DATA_Resive();
 //    DATA_Send();
     // modbus_update(); 
 // up_reg();

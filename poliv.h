@@ -302,7 +302,7 @@ void resetRelay()
  if (relay != relay_poliv)
   {
    relay_poliv=relay;
-//   DATA_Send();
+  DATA_Send();
    terminal.println("Полив:"+ String(relay));
    terminal.flush(); 
   }

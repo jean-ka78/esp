@@ -20,7 +20,7 @@ WidgetRTC rtc;
 BLYNK_CONNECTED() {
   if (isFirstConnect) {
     Blynk.syncAll();
-    Blynk.notify("Теплица test STARTING!!!!");
+    Blynk.notify("Теплица STARTING!!!!");
     isFirstConnect = false;
   }
    Blynk.syncVirtual(V16,V17,V15,V50,V40,V41,V42,V43,V55,V51,V52,V55);
@@ -118,7 +118,7 @@ void setup_blynk(){
  timer.setInterval(5000, up_array);
   timer.setInterval(50, svet);
   // timer.setInterval(1000L, DATA_Send);
-//  timer.setInterval(500L, DATA_Resive);
+ timer.setInterval(500L, DATA_Resive);
    timer.setInterval(1000L, clockDisplay);
 }
 

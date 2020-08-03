@@ -11,16 +11,16 @@
    Wifi Credentials
 */
 
-//   #define WIFI_SSID               "aonline"  //Имя точки доступа WIFI VVK   AndroidAP
-#define WIFI_SSID               "UniNet"  //Имя точки доступа WIFI VVK   AndroidAP
+  #define WIFI_SSID               "aonline"  //Имя точки доступа WIFI VVK   AndroidAP
+// #define WIFI_SSID               "UniNet"  //Имя точки доступа WIFI VVK   AndroidAP
 
-//   #define WIFI_PASS               "1qaz2wsx3edc" //пароль точки доступа WIFI vtb24admin 1234567890
-#define WIFI_PASS               "owen2014" //пароль точки доступа WIFI vtb24admin 1234567890
+  #define WIFI_PASS               "1qaz2wsx3edc" //пароль точки доступа WIFI vtb24admin 1234567890
+// #define WIFI_PASS               "owen2014" //пароль точки доступа WIFI vtb24admin 1234567890
 /*
      Blynk Auth Code
 */
-//#define AUTH                      "5snN9aCY1vfL2w9Pf7Axf97CPceSGxNd"
-  #define AUTH                      "fdJqyGGBEVnEm2Ge9TgtpPRXCaikPnhJ"  //test
+#define AUTH                      "5snN9aCY1vfL2w9Pf7Axf97CPceSGxNd"
+  // #define AUTH                      "fdJqyGGBEVnEm2Ge9TgtpPRXCaikPnhJ"  //test
 
 
 //MQTT Server
