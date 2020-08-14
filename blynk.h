@@ -117,7 +117,7 @@ void setup_blynk(){
   timer.setInterval(50L, logic);
  timer.setInterval(5000, up_array);
   timer.setInterval(50, svet);
-  // timer.setInterval(1000L, DATA_Send);
+   timer.setInterval(10000L, DATA_Send);
  timer.setInterval(500L, DATA_Resive);
    timer.setInterval(1000L, clockDisplay);
 }
