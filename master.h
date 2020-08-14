@@ -3,7 +3,7 @@
      // interval at which to blink (milliseconds)
 ////////////////////modbus////////////
 #define baud        115200
-#define timeout     50
+#define timout     50
 #define polling     200 // скорость опроса по модбус
 #define retry_count 10
 #define TxEnablePin 0   // Tx/Rx пин RS485
@@ -54,7 +54,7 @@ void setup_mega()
    modbus_construct(&packets[PACKET6], Slave_ID, PRESET_MULTIPLE_REGISTERS, 95, 23, 95); 
  
   // инициализируем протокол модбус
-  modbus_configure(&Serial, baud, timeout, polling, retry_count, TxEnablePin, packets, TOTAL_NO_OF_PACKETS, regs);
+  modbus_configure(&Serial, baud, timout, polling, retry_count, TxEnablePin, packets, TOTAL_NO_OF_PACKETS, regs);
  
 }
 

@@ -13,7 +13,10 @@ WidgetLED led1(V44), led2(V45), led3(V46), led4(V47);
 #include "obogrev.h"
 
 #include "dosvetka.h"
+#include "json.h"
+
 #include "blynk.h"
+
 char led;
 
 void setup() 

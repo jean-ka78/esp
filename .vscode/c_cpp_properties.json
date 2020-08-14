@@ -6,7 +6,10 @@
                 "/home/jean/.arduino15/packages/esp8266/tools/**",
                 "/home/jean/.arduino15/packages/esp8266/hardware/esp8266/2.5.2/**",
                 "C:\\Users\\e.kapitonov\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.2\\**",
-                "C:\\Users\\e.kapitonov\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**"
+                "C:\\Users\\e.kapitonov\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\Evgeniy\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.0\\**",
+                "C:\\Users\\Evgeniy\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\Evgeniy\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\**"
             ],
             "forcedInclude": [],
             "intelliSenseMode": "gcc-x64",
