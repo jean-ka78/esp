@@ -57,7 +57,7 @@ tags_3["value"] = TempZ[2];
 
 JsonObject tags_4 = tags.createNestedObject();
 tags_4["id"] = 5;
-tags_4["value"] = Temp_in;
+tags_4["value"] = TempZ[3];
 
 JsonObject tags_5 = tags.createNestedObject();
 tags_5["id"] = 6;
