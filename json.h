@@ -57,42 +57,18 @@ tags_3["value"] = TempZ[3];
 
 JsonObject tags_4 = tags.createNestedObject();
 tags_4["id"] = 5;
-tags_4["value"] = Humid1;
+tags_4["value"] = Temp_in;
 
 JsonObject tags_5 = tags.createNestedObject();
 tags_5["id"] = 6;
-tags_5["value"] = NH3;
+tags_5["value"] = Humid1;
 
 JsonObject tags_6 = tags.createNestedObject();
 tags_6["id"] = 7;
-tags_6["value"] = Temp_in;
+tags_6["value"] = NH3;
 String output;
 serializeJson(doc_post, output);
 //  Serial.println(output);
 httpPostRequest(serverName ,output);
-//  HTTPClient http;
-//    
-//  // Your IP address with path or Domain name with URL path 
-//  http.begin(serverName);
-//
-//  // String httpRequestData;
-//http.addHeader("Content-Type",  "application/json");
-//  // Send HTTP POST request
-//  int httpResponseCode = http.POST(output);
-//  
-//  String payload = "{}"; 
-//  
-//  if (httpResponseCode>0) {
-////    Serial.print("HTTP Response code_Post: ");
-////    Serial.println(httpResponseCode);
-//    payload = http.getString();
-//    // Serial.println(payload);
-//  }
-//  else {
-////    Serial.print("Error code: ");
-////    Serial.println(httpResponseCode);
-//  }
-//  // Free resources
-//  http.end();
 
  }
