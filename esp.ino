@@ -7,7 +7,7 @@ WidgetTerminal terminal(V8);
 WidgetLED led1(V44), led2(V45), led3(V46), led4(V47);
 #include "Settings.h"
 #include "F_EEPROM.h"
-#include "master.h"
+//#include "master.h"
 #include "uart.h"
 
 #include "obogrev.h"
@@ -22,7 +22,7 @@ char led;
 void setup() 
 {
   Serial.begin(115200);
-  setup_mega();
+//  setup_mega();
     // Следующие три строки для прошивки по воздуху
   ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
   //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
