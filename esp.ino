@@ -24,9 +24,7 @@ void setup()
   Serial.begin(115200);
   setup_mega();
     // Следующие три строки для прошивки по воздуху
-  ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
-  //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
-  ArduinoOTA.begin(); // Инициализируем OTA
+ 
   
   setup_uart();
   EEPROM_READ();
@@ -34,6 +32,9 @@ void setup()
   // setupMqtt();
   reconnectBlynk(); 
   terminal.clear();
+  ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
+  //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
+  ArduinoOTA.begin(); / / Инициализируем OTA
  }
 
 void loop()
