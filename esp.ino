@@ -34,7 +34,8 @@ void setup()
   terminal.clear();
   ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
   //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
-  ArduinoOTA.begin(); / / Инициализируем OTA
+  ArduinoOTA.begin(); 
+  // Инициализируем OTA
  }
 
 void loop()

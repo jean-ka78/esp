@@ -2,7 +2,7 @@
 // #include <Arduino_JSON.h> 
 #include <ArduinoJson.h> 
 //#define serverName  "http://bfcloud.space/api/v1/modbus-device/"
-const char* serverName = "http://bfcloud.space/api/v1/modbus-device/";
+const char* serverName = "http://bfcloud.space/connector/http-api/";
 // 
 String httpPostRequest(const char* serverName, String httpRequestData) {
   HTTPClient http;
@@ -11,6 +11,7 @@ String httpPostRequest(const char* serverName, String httpRequestData) {
   http.begin(serverName);
 
   // String httpRequestData;
+http.addHeader("Authorization",  "Token P6FWhSgd57F0tw8aWMLaqtSGbHPVHfOLce6Wn8CS");
 http.addHeader("Content-Type",  "application/json");
   // Send HTTP POST request
   int httpResponseCode = http.POST(httpRequestData);
