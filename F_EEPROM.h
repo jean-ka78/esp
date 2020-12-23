@@ -1,9 +1,5 @@
 #include <EEPROM.h>         
-<<<<<<< HEAD
 // #include "EEPROMAnything.h" // http://playground.arduino.cc/Code/EEPROMWriteAnything
-=======
-//#include "EEPROMAnything.h" // http://playground.arduino.cc/Code/EEPROMWriteAnything
->>>>>>> c42cf31595ac9f2eda741349a067d7e0675c260f
 
 // Функция чтения данных из Энергонезовисимой памяти EEPROM
 void EEPROM_READ()
@@ -41,7 +37,6 @@ EEPROM.write(41, TempZ_2);
 EEPROM.write(42, TempZ_3);
 EEPROM.write(43, TempZ_4);
 // Уставки температуры c 100 по 199
-<<<<<<< HEAD
 //   addr = 100;
 //   for (int i=0; i < 4; i++)
 //   {EEPROM_readAnything(addr+i*10, TempTuning[i]);}  
@@ -61,27 +56,6 @@ EEPROM.write(43, TempZ_4);
 //   TimerTuning[2] // Адрес 220
 //   TimerTuning[3] // Адрес 230
 // */     
-=======
-//  addr = 100;
-//  for (int i=0; i < 4; i++)
-//  {EEPROM_readAnything(addr+i*10, TempTuning[i]);}  
-///*  
-//  TempTuning[0] // Адрес 100
-//  TempTuning[1] // Адрес 110
-//  TempTuning[2] // Адрес 120
-//  TempTuning[3] // Адрес 130
-//*/    
-//// Уставки времени c 200 по 399
-//  addr = 200;
-//  for (int i=0; i < 4; i++)
-//  {EEPROM_readAnything(addr+i*10, TimerTuning[i]);} 
-/*  
-  TimerTuning[0] // Адрес 200
-  TimerTuning[1] // Адрес 210
-  TimerTuning[2] // Адрес 220
-  TimerTuning[3] // Адрес 230
-*/     
->>>>>>> c42cf31595ac9f2eda741349a067d7e0675c260f
   EEPROM.end(); 
 
   terminal.println("EEPROM_READ_Stop");

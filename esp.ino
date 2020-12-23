@@ -22,32 +22,16 @@ char led;
 void setup() 
 {
   Serial.begin(115200);
-//  setup_mega();
-    // Следующие три строки для прошивки по воздуху
-<<<<<<< HEAD
- 
-=======
-  
->>>>>>> c42cf31595ac9f2eda741349a067d7e0675c260f
-  
   setup_uart();
   EEPROM_READ();
   setup_blynk();
   // setupMqtt();
   reconnectBlynk(); 
   terminal.clear();
-<<<<<<< HEAD
   ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
   //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
   ArduinoOTA.begin(); 
   // Инициализируем OTA
-=======
-
-
-  ArduinoOTA.setHostname("ESPTeplica"); // Задаем имя сетевого порта
-  //ArduinoOTA.setPassword((const char *)"0000"); // Задаем пароль доступа для удаленной прошивки
-  ArduinoOTA.begin(); // Инициализируем OTA
->>>>>>> c42cf31595ac9f2eda741349a067d7e0675c260f
  }
 
 void loop()
